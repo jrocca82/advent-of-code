@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "hardhat clean && hardhat compile --force && hardhat size-contracts",
     "node": "hardhat node --hostname localhost",
+    "generate": "yarn ts-node utils/generateDirectories.ts",
     "test": "hardhat test",
     "coverage": "hardhat coverage",
     "size": "hardhat size-contracts",
@@ -25,6 +26,7 @@
     "@types/chai-as-promised": "^7.1.5",
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.7.1",
+    "@types/prompts": "^2.4.2",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
     "dotenv": "^16.0.1",
@@ -57,7 +59,11 @@
     "@types/bn.js": "^5.1.1",
     "bn.js": "^5.2.1",
     "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
     "husky": "^8.0.2",
-    "prettier-plugin-solidity": "^1.0.0-beta.24"
+    "path": "^0.12.7",
+    "prettier-plugin-solidity": "^1.0.0-beta.24",
+    "prompts": "^2.4.2",
+    "to-words": "^3.3.1"
   }
 }
